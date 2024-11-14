@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> Hellow World</title>
-    <p>Hello world</p>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-</body>
+    <link rel="stylesheet" href="CSS%20Files/global.css" />
+    <link rel="stylesheet" href="CSS%20Files/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <div class="content-wrapper">
+        <div class="carousel">
+          <img
+            class="roof-and-columns-of-the-natura"
+            alt=""
+            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
+          />
+
+          <img
+            class="amazing-aerial-shot-of-a-moder"
+            alt=""
+            src="./public/amazing-aerial-shot-of-a-modern-bridge-in-the-countryside-village-in-the-philippines@2x.png"
+          />
+
+          <img
+            class="roof-and-columns-of-the-natura"
+            alt=""
+            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
+          />
+        </div>
+        <div class="title-wrapper">
+          <b class="website-title">Website Title</b>
+          <input class="search-bar" type="text" />
+
+          <div class="row">
+
+            <div class="padding">
+
+          <button class="choose-country-btn" id="search-country">
+            <div class="text">
+              <div class="search-country">Search Country</div>
+            </div>
+          </button>
+
+           </div>
+            <div class="padding">
+
+            <button class="choose-country-btn" id="search-year">
+            <div class="text2">
+              <div class="search-year">Search Year</div>
+            </div>
+          </button>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="searchByCountryWrapper"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="search-by-country-wrapper" data-animate-on-scroll>
+        <div class="row-1">
+          <button class="country-btn" id="drawercountryBtn">
+            <div class="text10">
+              <div class="switzerland">Philippines</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Switzerland</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Japan</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">United States</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Canada</div>
+            </div>
+          </button>
+        </div>
+        <div class="row-1">
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Australia</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Sweden</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">Germany</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">United Kingdom</div>
+            </div>
+          </button>
+          <button class="country-btn1">
+            <div class="text10">
+              <div class="switzerland">New Zealand</div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var drawercountryBtn = document.getElementById("drawercountryBtn");
+      if (drawercountryBtn) {
+        drawercountryBtn.addEventListener("click", function (e) {
+          window.location.href = "./country.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      
+      var chooseCountryBtn = document.getElementById("search-country");
+      if (chooseCountryBtn) {
+        chooseCountryBtn.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("searchByCountryWrapper");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "flex-end";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      </script>
+  </body>
 </html>

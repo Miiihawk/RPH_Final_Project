@@ -1,0 +1,75 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.country-btn,
+.text10 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.country-btn {
+  cursor: pointer;
+  border: 3px solid var(--color-sienna);
+  padding: 16px var(--padding-4xl);
+  background-color: var(--color-gray-100);
+  flex: 1;
+  box-sizing: border-box;
+  height: 60px;
+}
+.switzerland {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  font-family: var(--font-times-new-roman);
+  color: var(--color-white);
+  text-align: left;
+}
+.country-btn1 {
+  cursor: pointer;
+  border: 3px solid var(--color-sienna-100);
+  padding: var(--padding-xs) var(--padding-4xl);
+  background-color: var(--color-gray-200);
+  flex: 1;
+  box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.row-1,
+.search-by-country-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.row-1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-76xl);
+}
+.search-by-country-wrapper {
+  width: 100%;
+  position: relative;
+  box-shadow: 1.5px 0 4px rgba(52, 55, 69, 0.16);
+  background-color: rgba(28, 24, 30, 0.95);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 47px 98px;
+  box-sizing: border-box;
+  gap: var(--gap-17xl);
+  opacity: 0;
+  max-height: 90%;
+  overflow: auto;
+}
+.search-by-country-wrapper.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-bottom;
+}
