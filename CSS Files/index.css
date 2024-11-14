@@ -50,7 +50,25 @@
   justify-content: flex-end;
   padding: var(--padding-3xs) 18px var(--padding-3xs) var(--padding-xs);
 }
+
+.row{
+  marigin: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.padding{
+  padding: 10px;
+}
 .search-country {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+  font-family: var(--font-times-new-roman);
+  color: var(--color-white);
+  white-space: pre-wrap;
+  text-align: left;
+}
+.search-year{
   position: relative;
   font-size: var(--font-size-xl);
   line-height: 150%;
@@ -61,6 +79,11 @@
 }
 .text {
   flex-direction: row;
+}
+
+.text2{
+  flex-direction: row;
+  padding: 12px;
 }
 .choose-country-btn,
 .content-wrapper,
