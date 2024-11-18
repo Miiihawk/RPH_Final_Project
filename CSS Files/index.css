@@ -15,14 +15,14 @@
 }
 
 
-.amazing-aerial-shot-of-a-moder,
-.roof-and-columns-of-the-natura {
+.Front-pic-1,
+.Front-pic-3 {
   width: 342px;
   position: relative;
   height: 504px;
   object-fit: cover;
 }
-.amazing-aerial-shot-of-a-moder {
+.Front-pic-2 {
   width: 489px;
   height: 706px;
 }
@@ -63,6 +63,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .padding{
   padding: 10px;
 }
@@ -86,11 +87,12 @@
 }
 .text {
   flex-direction: row;
+  padding-left: 4px;
 }
 
 .text2{
   flex-direction: row;
-  padding: 12px;
+  padding: 15px;
 }
 .choose-country-btn,
 .content-wrapper,
