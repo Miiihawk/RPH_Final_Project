@@ -21,12 +21,18 @@ body {
   --font-size-13xl: 32px;
 
   /* Colors */
+  --color-black: #000;
   --color-gray-100: #1c181e;
   --color-gray-200: rgba(28, 24, 30, 0.4);
   --color-white: #fff;
   --color-sienna: #a3784e;
   --color-sienna-100: rgba(163, 120, 78, 0.4);
   --color-gainsboro: #d9d9d9;
+  --color-blue: #7C93C3;
+  --color-blue-matte: #55679C;
+  --color-blue-dark: #1E2A5E;
+  --color-brown: #E1D7B7;
+
 
   /* Gaps */
   --gap-5xs: 8px;

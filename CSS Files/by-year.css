@@ -1,3 +1,4 @@
+
 .website-title2 {
   position: relative;
   line-height: 48px;
@@ -12,7 +13,7 @@
 .nav-bar1 {
   flex: 1;
   box-shadow: 0 11px 7.1px rgba(52, 55, 69, 0.16);
-  background-color: var(--color-gray-100);
+  background-color: var(--color-blue-matte);
   align-items: center;
   padding: var(--padding-5xs) var(--padding-81xl);
 }
@@ -20,6 +21,8 @@
   height: 64px;
   align-items: flex-start;
 }
+
+
 .arrow-left-21 {
   position: absolute;
   height: 64.58%;
@@ -49,15 +52,15 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.lorem-ipsum-dolor6,
+.text,
 .year1 {
   align-self: stretch;
   position: relative;
   line-height: 150%;
 }
-.lorem-ipsum-dolor6 {
+.text {
   font-size: var(--font-size-base);
-  color: var(--color-white);
+  color: var(--color-brown);
 }
 .text6 {
   align-self: stretch;
@@ -115,12 +118,12 @@
   align-items: flex-start;
   gap: 26px;
   font-size: 40px;
-  color: var(--color-sienna);
+  color: var(--color-brown);
 }
 .year {
   width: 100%;
   position: relative;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-blue-dark);
   height: 1744px;
   overflow: hidden;
   align-items: center;

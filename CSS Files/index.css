@@ -45,9 +45,9 @@
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 .search-bar {
-  border: 3px solid var(--color-sienna);
+  border: 3px solid var(--color-sienna-100);
   outline: 0;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-brown);
   width: 640px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
@@ -56,6 +56,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: var(--padding-3xs) 18px var(--padding-3xs) var(--padding-xs);
+  border-radius: 20px;
 }
 
 .row{
@@ -72,7 +73,7 @@
   font-size: var(--font-size-xl);
   line-height: 150%;
   font-family: var(--font-times-new-roman);
-  color: var(--color-white);
+  color: var(--color-brown);
   white-space: pre-wrap;
   text-align: left;
 }
@@ -81,7 +82,7 @@
   font-size: var(--font-size-xl);
   line-height: 150%;
   font-family: var(--font-times-new-roman);
-  color: var(--color-white);
+  color: var(--color-brown);
   white-space: pre-wrap;
   text-align: left;
 }
@@ -104,13 +105,14 @@
 }
 .choose-country-btn {
   cursor: pointer;
-  border: 3px solid #654e38;
+  border: 3px solid var(--color-brown);
   padding: var(--padding-xs) var(--padding-4xl);
-  background-color: var(--color-gray-100);
+  background-color: var(--color-blue-matte);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   height: 60px;
   flex-direction: row;
+  border-radius: 10px;
 }
 .content-wrapper,
 .title-wrapper {
@@ -130,7 +132,7 @@
 .home {
   width: 100%;
   position: relative;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-blue-dark);
   height: 100vh;
   overflow: hidden;
   text-align: left;
@@ -152,26 +154,27 @@
 }
 .country-btn {
   cursor: pointer;
-  border: 3px solid var(--color-sienna);
+  border: 3px solid var(--color-brown);
   padding: 16px var(--padding-4xl);
-  background-color: var(--color-gray-100);
+  background-color: var(--color-blue-dark);
   flex: 1;
   box-sizing: border-box;
   height: 60px;
+  border-radius: 10px;
 }
-.switzerland {
+.Country {
   position: relative;
   font-size: var(--font-size-xl);
   line-height: 150%;
   font-family: var(--font-times-new-roman);
-  color: var(--color-white);
+  color: var(--color-brown);
   text-align: left;
 }
 .country-btn1 {
   cursor: pointer;
   border: 3px solid var(--color-sienna-100);
   padding: var(--padding-xs) var(--padding-4xl);
-  background-color: var(--color-gray-200);
+  background-color: var(--color-blue-matte);
   flex: 1;
   box-sizing: border-box;
   height: 60px;
@@ -179,6 +182,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 .row-1,
 .search-by-country-wrapper {
@@ -195,7 +199,7 @@
   width: 100%;
   position: relative;
   box-shadow: 1.5px 0 4px rgba(52, 55, 69, 0.16);
-  background-color: rgba(28, 24, 30, 0.95);
+  background-color: var(--color-blue);
   flex-direction: column;
   align-items: flex-start;
   padding: 47px 98px;
