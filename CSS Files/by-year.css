@@ -121,10 +121,10 @@
   color: var(--color-brown);
 }
 .year {
-  width: 100%;
+
   position: relative;
   background-color: var(--color-blue-dark);
-  height: 1744px;
+  height: 100vh;
   overflow: hidden;
   align-items: center;
   gap: 37px;
