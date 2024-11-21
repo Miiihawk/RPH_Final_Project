@@ -1,216 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="initial-scale=1, width=device-width" name="viewport"/>
 
-    <link rel="stylesheet" href="CSS%20Files/global.css" />
-    <link rel="stylesheet" href="CSS%20Files/index.css" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+            rel="stylesheet"
     />
-  </head>
 
-  <body>
+    <link href="CSS%20Files/global.css" rel="stylesheet"/>
+    <link href="CSS%20Files/index.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap" rel="stylesheet"/>
 
-  <!-- Front Page background -->
 
-    <div class="home">
-      <div class="content-wrapper">
-        <div class="carousel">
-          <img
-            class="Front-pic-1"
-            alt=""
-            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
-          />
+</head>
 
-          <img
-            class="Front-pic-2"
-            alt=""
-            src="./public/amazing-aerial-shot-of-a-modern-bridge-in-the-countryside-village-in-the-philippines@2x.png"
-          />
+<body>
 
-          <img
-            class="Front-pic-3"
-            alt=""
-            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
-          />
+<section class="home">
+    <div class="content">
+        <h1 class="title">Website Name</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+
+        <div class="btn-cont">
+            <div class="row">
+
+                <!-- Country btn -->
+
+                <div class="btn-padding">
+
+                    <button class="btn" id="era">
+                        <div class="text">
+                            <div class="search-country">Find Era</div>
+                        </div>
+                    </button>
+
+                    <!-- Year btn-->
+                </div>
+                <div class="btn-padding">
+
+                    <button class="btn" id="year">
+                        <div class="text2">
+                            <div class="search-year">Find Year</div>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
         </div>
 
-   <!-- WebSite Title -->
-
-        <div class="title-wrapper">
-
-          <b class="website-title">Website Title</b>
-          <input class="search-bar" type="text" />
-
-          <div class="row">
-
-   <!-- Country btn-->
-
-            <div class="padding">
-
-          <button class="choose-country-btn" id="search-country">
-            <div class="text">
-              <div class="search-country">Search Country</div>
-            </div>
-          </button>
-
-   <!-- Year btn-->
-            </div>
-            <div class="padding">
-
-            <button class="choose-country-btn" id="search-year">
-            <div class="text2">
-              <div class="search-year">Search Year</div>
-            </div>
-          </button>
-          </div>
-
-          </div>
-
-        </div>
-      </div>
     </div>
 
 
-  <!-- Country pop up -->
+</section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="JavaScript/index.js"></script>
 
-    <div
-      id="searchByCountryWrapper"
-      class="popup-overlay"
-      style="display: none"
-    >
-      <div class="search-by-country-wrapper" data-animate-on-scroll>
-        <div class="row-1">
-          <button class="country-btn" id="drawercountryBtn">
-            <div class="text10">
-              <div class="Country">Philippines</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Switzerland</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Japan</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">United States</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Canada</div>
-            </div>
-          </button>
-        </div>
-
-
-        <div class="row-1">
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Australia</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Sweden</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Germany</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">United Kingdom</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">New Zealand</div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-
-   <!-- Year pop up -->
-
-    <div
-            id="searchByYearWrapper"
-            class="popup-overlay"
-            style="display: none"
-    >
-      <div class="search-by-country-wrapper" data-animate-on-scroll>
-        <div class="row-1">
-          <button class="country-btn" id="draweryearBtn">
-            <div class="text10">
-              <div class="Country">1521</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Switzerland</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Japan</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">United States</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Canada</div>
-            </div>
-          </button>
-        </div>
-
-
-
-        <div class="row-1">
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Australia</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Sweden</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">Germany</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">United Kingdom</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="Country">New Zealand</div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <script src="JavaScript/index.js"> </script>
-
-  </body>
+</body>
 </html>

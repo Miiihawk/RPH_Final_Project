@@ -109,3 +109,37 @@ if (chooseYearBtn) {
     drawerOverlay.addEventListener("click", onClick);
   });
 }
+
+
+// swiper js
+
+
+var swiper = new Swiper(".swiper", {
+
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true, // Center the active slide
+  slidesPerView: 1, // Dynamically adjust slide width
+  initialSlide: 0, // Start from the first slide
+  loop: true, // Enable infinite loop
+  loopedSlides: 4,
+  spaceBetween: 30, // Add spacing between slides
+  speed: 600,
+  autoplay: {
+    delay: 2500, // Autoplay delay
+    disableOnInteraction: false, // Keep autoplay running after interaction
+  },
+  coverflowEffect: {
+    rotate: 0, // No rotation
+    stretch: 80, // Adds spacing between the slides
+    depth: 350, // Depth for 3D effect
+    modifier: 1,
+    slideShadows: true, // Slide shadow for depth effect
+  },
+
+  on:{
+    click(event){
+      swiper.slideTo(this.clickedIndex);
+    },
+  },
+});
