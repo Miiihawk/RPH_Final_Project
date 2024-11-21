@@ -61,7 +61,7 @@
   gap: var(--gap-base);
 }
 
-.infos img {
+.img {
   width: 136px;
   position: relative;
   border-radius: 50%;
