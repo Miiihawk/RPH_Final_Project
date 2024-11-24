@@ -177,6 +177,17 @@ section {
     border: 0.5rem solid var(--light-blue);
 }
 
+.street-view {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    border: 0.5rem solid var(--light-blue);
+}
+
+
 @media (max-width: 900px) {
     .row {
         flex-direction: column;
