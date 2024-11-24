@@ -262,6 +262,13 @@ footer {
     color: var(--light-blue);
 }
 
+.street-view {
+    width: 100%; /* Full width */
+    height: 400px; /* Set height as needed */
+    margin: 20px 0; /* Add margin for spacing */
+    cursor: pointer; /* Indicate that the area is clickable */
+}
+
 @media(max-width: 900px) {
     .footer p {
         font-size: 20px;
