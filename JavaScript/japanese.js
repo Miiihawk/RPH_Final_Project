@@ -1,5 +1,4 @@
 
-
   function initStreetView() {
     var locations = {
         'pearlharbor-street-view': { lat: 21.35838076966674, lng: -157.96321669252987 }, 
