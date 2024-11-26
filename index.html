@@ -1,185 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bayan at Panahon</title>
 
-    <link rel="stylesheet" href="CSS%20Files/global.css" />
-    <link rel="stylesheet" href="CSS%20Files/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="home">
-      <div class="content-wrapper">
-        <div class="carousel">
-          <img
-            class="roof-and-columns-of-the-natura"
-            alt=""
-            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
-          />
+    <link href="CSS%20Files/global.css" rel="stylesheet"/>
+    <link href="CSS%20Files/index.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Times New Roman:wght@400;700&display=swap" rel="stylesheet"/>
 
-          <img
-            class="amazing-aerial-shot-of-a-moder"
-            alt=""
-            src="./public/amazing-aerial-shot-of-a-modern-bridge-in-the-countryside-village-in-the-philippines@2x.png"
-          />
 
-          <img
-            class="roof-and-columns-of-the-natura"
-            alt=""
-            src="./public/roof-and-columns-of-the-natural-history-museum-of-marseille-under-the-sunlight-in-france@2x.png"
-          />
+</head>
+
+<body>
+
+<!--NAVIGATION BAR WITH LOGO-->
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- close icon -->
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="title-wrapper">
-          <b class="website-title">Website Title</b>
-          <input class="search-bar" type="text" />
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- menu icon -->
+    </nav>
 
-          <div class="row">
+</header>
 
-            <div class="padding">
+<section class="home" id="Home">
+    <div class="home" id="blur">
+        <video autoplay class="video-slide" loop muted src="public/Banaue.mp4"></video>
+        <div class="content">
+            <h1 class="title">Bayan at Panahon</h1>
+            <p>Kasaysayan Natin, Gabay ng Kinabukasan.</p>
 
-          <button class="choose-country-btn" id="search-country">
-            <div class="text">
-              <div class="search-country">Search Country</div>
+            <div class="btn-cont">
+                <div class="row">
+
+                    <!-- Country btn -->
+
+                    <div class="btn-padding">
+
+                        <a class="btn" href="Timeline.html" id="era"> Take me</a>
+
+                    </div>
+
+                </div>
             </div>
-          </button>
-
-           </div>
-            <div class="padding">
-
-            <button class="choose-country-btn" id="search-year">
-            <div class="text2">
-              <div class="search-year">Search Year</div>
-            </div>
-          </button>
-          </div>
-
-          </div>
 
         </div>
-      </div>
     </div>
 
-    <div
-      id="searchByCountryWrapper"
-      class="popup-overlay"
-      style="display: none"
-    >
-      <div class="search-by-country-wrapper" data-animate-on-scroll>
-        <div class="row-1">
-          <button class="country-btn" id="drawercountryBtn">
-            <div class="text10">
-              <div class="switzerland">Philippines</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Switzerland</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Japan</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">United States</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Canada</div>
-            </div>
-          </button>
+
+</section>
+
+<section class="about" id="About">
+    <h2 class="heading">About</h2>
+
+    <div class="row-about">
+        <div class="col">
+            <h3>Misyon</h3>
+            <p>Ihatid ang kasaysayan ng Pilipinas sa bawat Pilipino, mula sa sinaunang panahon hanggang sa kasalukuyan,
+                sa isang makabuluhan at madaling maunawaan na paraan upang mapalaganap ang kaalaman at pagmamahal sa
+                ating bayan.</p>
         </div>
-        <div class="row-1">
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Australia</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Sweden</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">Germany</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">United Kingdom</div>
-            </div>
-          </button>
-          <button class="country-btn1">
-            <div class="text10">
-              <div class="switzerland">New Zealand</div>
-            </div>
-          </button>
+        <div class="col">
+            <h3>Bisyon</h3>
+            <p>Isang makabagong pook-digital na nagsisilbing talaan ng kasaysayan ng Pilipinas, na nag-uugnay sa bawat
+                Pilipino sa kanilang makulay na nakaraan at nagsisilbing inspirasyon para sa kinabukasan.</p>
         </div>
-      </div>
     </div>
 
-    <script>
-      var drawercountryBtn = document.getElementById("drawercountryBtn");
-      if (drawercountryBtn) {
-        drawercountryBtn.addEventListener("click", function (e) {
-          window.location.href = "./country.html";
-        });
-      }
-      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.15,
-        }
-      );
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
-      }
-      
-      var chooseCountryBtn = document.getElementById("search-country");
-      if (chooseCountryBtn) {
-        chooseCountryBtn.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("searchByCountryWrapper");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            drawerOverlayStyle.alignItems = "center";
-            drawerOverlayStyle.justifyContent = "flex-end";
-          }
-          drawerOverlay.setAttribute("closable", "");
-      
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-      </script>
-  </body>
+
+</section>
+
+<section class="contact" id="Contact">
+    <h2 class="heading">Contact Us</h2>
+    <div class="contact-details">
+        <div class="row-contact">
+
+            <div class="col first">
+                <h3>Developers:</h3>
+                <p>Alliza Caberte
+                    <a href="https://facebook.com/alliza.caberte/"><i class="fa-brands fa-square-facebook"
+                                                                      style="color: #a3784e;"></i></a>
+                </p>
+                <p>Vhiane Gulapa
+                    <a href="https://www.facebook.com/vhiane.angenae"><i class="fa-brands fa-square-facebook"
+                                                                         style="color: #a3784e;"></i></a>
+                </p>
+                <p>Lianne Dela Torre
+                    <a href="https://www.facebook.com/liannelou.delatorre"><i class="fa-brands fa-square-facebook"
+                                                                              style="color: #a3784e;"></i></a>
+                </p>
+                <p>David Wagan
+                    <a href="https://www.facebook.com/rrredcrayons"><i class="fa-brands fa-square-facebook"
+                                                                       style="color: #a3784e;"></i></a>
+                </p>
+                <p>Keith Perdido
+                    <a href="https://www.facebook.com/keith.perdido"><i class="fa-brands fa-square-facebook"
+                                                                        style="color: #a3784e;"></i></a>
+                </p>
+            </div>
+
+            <div class="col second">
+                <h3>Bayan at Panahon</h3>
+                <p>Muling Pagbuhay sa mga Sandaling Humubog sa Ating Bayan.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--FOOTER ENDING-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by Caberte, Wagan, Gulapa, Dela Torre, Perdido | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+</footer>
+
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/13665e3f06.js"></script>
+
+</body>
 </html>
