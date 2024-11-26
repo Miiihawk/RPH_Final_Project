@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <meta content="initial-scale=1, width=device-width" name="viewport"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Name</title>
 
     <link href="CSS%20Files/global.css" rel="stylesheet"/>
     <link href="CSS%20Files/index.css" rel="stylesheet"/>
@@ -13,14 +15,28 @@
 
 <body>
 
-<section class="section">
+    <!--NAVIGATION BAR WITH LOGO-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- close icon -->
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- menu icon -->
+        </nav>
+
+    </header>
+
+<section class="home" id="Home">
     <div class="home" id="blur">
         <video autoplay class="video-slide" loop muted src="public/Banaue.mp4"></video>
         <div class="content">
-            <h1 class="title">Website Name</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <h1 class="title">Bayan at Panahon</h1>
+            <p>Kasaysayan Natin, Gabay ng Kinabukasan.</p>
 
             <div class="btn-cont">
                 <div class="row">
@@ -42,44 +58,53 @@
 
 </section>
 
-<section class="features" id="About">
+<section class="about" id="About">
     <h2 class="heading">About</h2>
 
-    <div class="row">
+    <div class="row-about">
         <div class="col">
-
-
+            <h3>Misyon</h3>
+            <p>Ihatid ang kasaysayan ng Pilipinas sa bawat Pilipino, mula sa sinaunang panahon hanggang sa kasalukuyan, sa isang makabuluhan at madaling maunawaan na paraan upang mapalaganap ang kaalaman at pagmamahal sa ating bayan.</p>
         </div>
         <div class="col">
-
-
-        </div>
-    </div>
-
-
-</section>
-<section class="features" id="features">
-    <h2 class="heading">Features</h2>
-
-    <div class="row">
-        <div class="col">
-
-            <h3>Navigation</h3>
-
-        </div>
-        <div class="col">
-
-
+            <h3>Bisyon</h3>
+            <p>Isang makabagong pook-digital na nagsisilbing talaan ng kasaysayan ng Pilipinas, na nag-uugnay sa bawat Pilipino sa kanilang makulay na nakaraan at nagsisilbing inspirasyon para sa kinabukasan.</p>
         </div>
     </div>
 
 
 </section>
-<section class="contact" id="contact">
-    <h2 class="contacthead">Contact Us</h2>
 
+<section class="contact" id="Contact">
+    <h2 class="heading">Contact Us</h2>
     <div class="contact-details">
+        <div class="row-contact">
 
+            <div class="col first">
+                <h3>Developers:</h3>
+                <p>Alliza Caberte
+                    <a href="https://facebook.com/alliza.caberte/"><i class="fa-brands fa-square-facebook" style="color: #a3784e;"></i></a>
+                </p>
+                <p>Vhiane Gulapa
+                    <a href="https://www.facebook.com/vhiane.angenae"><i class="fa-brands fa-square-facebook" style="color: #a3784e;"></i></a>
+                </p>
+                <p>Lianne Dela Torre
+                    <a href="https://www.facebook.com/liannelou.delatorre"><i class="fa-brands fa-square-facebook" style="color: #a3784e;"></i></a>
+                </p>
+                <p>David Wagan
+                    <a href="https://www.facebook.com/rrredcrayons"><i class="fa-brands fa-square-facebook" style="color: #a3784e;"></i></a>
+                </p>
+                <p>Keith Perdido
+                    <a href="https://www.facebook.com/keith.perdido"><i class="fa-brands fa-square-facebook" style="color: #a3784e;"></i></a>
+                </p>
+            </div>
+
+            <div class="col second">
+                <h3>Bayan at Panahon</h3>
+                <p>Muling Pagbuhay sa mga Sandaling Humubog sa Ating Bayan.</p>
+            </div>
+
+        </div>
     </div>
 </section>
 
