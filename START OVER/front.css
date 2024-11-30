@@ -1,4 +1,4 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
 }
 
 :root {
@@ -48,7 +49,7 @@ body {
     background: var(--color-blue);
 }
 
-/*NAVIGATION BARO*/
+/*NAVIGATION BAR*/
 .header {
     position: absolute;
     top: 0;
@@ -59,7 +60,7 @@ body {
     background-color: var(--color-blue-matte);
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header a {
@@ -68,6 +69,7 @@ body {
     color: var(--color-black);
     text-decoration: none;
     font-size: 24px;
+    font-family: "Cinzel", serif;
 }
 
 .navbar {
@@ -83,9 +85,9 @@ body {
 }
 
 .navbar ul li a {
-    color: var(--color-black);
-    text-decoration: none;
-    font-size: 24px;
+    color: var(--color-brown);
+    z-index: 1001;
+    font-family: "Cinzel", serif;
 }
 
 .navbar ul li::after {
@@ -129,7 +131,6 @@ nav .fa-solid {
     align-items: center;
     color:var(--color-brown);
     text-align: center;
-
 }
 
 .home:before{
@@ -152,7 +153,6 @@ nav .fa-solid {
     height: 100%;
     object-fit: cover;
 }
-
 
 .home .content{
     z-index: 888;
@@ -201,8 +201,8 @@ nav .fa-solid {
 }
 
 /*PERIOD SECTION*/
-
 .container {
+    max-height: 100vh;
     max-width: 124rem;
     padding: 0 1rem;
     margin: 0 auto;
@@ -214,8 +214,13 @@ nav .fa-solid {
 
 .section-heading {
     font-size: 3rem;
-    color: var(--color-blue-matte);
+    color: var(--color-brown);
     padding: 2rem 0;
+    font-family: "Cinzel", serif;
+}
+
+.section-subheading {
+    color: var(--color-sienna);
 }
 
 #tranding {
@@ -355,7 +360,7 @@ nav .fa-solid {
 
 .tranding-slider-control .slider-arrow ion-icon {
     font-size: 2rem;
-    color: var(--color-sienna);
+    color: var(--color-brown);
 }
 
 .tranding-slider-control .slider-arrow::after {
@@ -374,4 +379,109 @@ nav .fa-solid {
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--color-blue);
+}
+
+/*CONTACT*/
+.contact-container {
+    min-height: 100vh;
+    padding: 5rem 9% 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    background: var(--color-blue-matte);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contact-col {
+    flex: 1; /* Equal column width */
+    text-align: left;
+}
+
+.contact img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 80%;
+}
+
+/*FOOTER STYLE*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 9%;
+    background: var(--color-blue-matte);
+}
+
+.footer-text p {
+    font-size: 1.3rem;
+    color: var(--color-brown);
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    background: var(--color-gray-200);
+    border: .2rem solid var(--color-gray-200);
+    border-radius: .4rem;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-blue-dark);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 20px;
+    color: var(--color-brown);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--color-brown);
+}
+
+@media(max-width: 900px) {
+    .footer p {
+        font-size: 20px;
+    }
+    .footer-iconTop a i {
+        font-size: 18px;
+    }
+    .footer-iconTop a {
+        padding: .5rem;
+    }
 }
