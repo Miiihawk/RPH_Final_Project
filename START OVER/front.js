@@ -11,7 +11,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         modifier: 2.5,
     },
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     pagination: {

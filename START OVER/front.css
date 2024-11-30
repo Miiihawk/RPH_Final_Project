@@ -171,6 +171,7 @@ nav .fa-solid {
 
 .home .content p{
     margin-bottom: 20px ;
+    font-size: 1.2rem;
 }
 
 .btn {
@@ -215,7 +216,7 @@ nav .fa-solid {
 .section-heading {
     font-size: 3rem;
     color: var(--color-brown);
-    padding: 2rem 0;
+    padding: 1rem 0;
     font-family: "Cinzel", serif;
 }
 
@@ -224,7 +225,7 @@ nav .fa-solid {
 }
 
 #tranding {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 @media (max-width:1440px) {
@@ -235,7 +236,7 @@ nav .fa-solid {
 
 #tranding .tranding-slider {
     height: 52rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
 }
 
@@ -267,6 +268,8 @@ nav .fa-solid {
     height: 42rem;
     border-radius: 2rem;
     object-fit: cover;
+    opacity: 70%;
+    background: var(--color-blue-dark);
 }
 
 .tranding-slide .tranding-slide-content {
@@ -293,7 +296,12 @@ nav .fa-solid {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom h2, h3{
+    color: var(--color-white);
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
 }
 
 .food-rating {
