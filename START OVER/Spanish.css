@@ -72,7 +72,7 @@ html {
 .header a {
     list-style: none;
     position: relative;
-    color: var(--color-black);
+    color: var(--color-4);
     font-weight: 650;
     text-decoration: none;
     font-size: 24px;
@@ -92,7 +92,7 @@ html {
 }
 
 .navbar ul li a {
-    color: var(--color-black);
+    color: var(--color-4);
     z-index: 1001;
     font-family: "Cinzel", serif;
 }
@@ -101,7 +101,7 @@ html {
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--color-4);
+    background: var(--color-3);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -134,16 +134,16 @@ body {
     padding: 0;
     line-height: 1.5;
     font-weight: 400;
-    color: white;
+    color: black;
     background-color: #1E2A5E;
-    background-image: linear-gradient(315deg, #4c4117 0%, #2a5470 74%);
+    background-image: linear-gradient(315deg, var(--color-3) 0%, var(--color-1) 74%);
 }
 
 h1 {
     font-family: "cenzil", serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: var(--color-brown);
+    color: var(--color-3);
 }
 
 p {
@@ -156,10 +156,18 @@ h2{
 }
 
 .container {
-    padding: 2rem;
+    padding: 100px 2rem ;
+
     margin: 0 auto;
-    max-width: 800px;
+    min-width: 800px;
+    font-size: 25px;
+
 }
+.container p{
+    font-size: 17px;
+    margin:20px 0;
+}
+
 
 .top-section {
     text-align: center;
@@ -240,6 +248,34 @@ h2{
 
 }
 
+.content h2{
+    margin: 10px 0;
+}
+
+/* Read More Btm*/
+
+.content a{
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background: black;
+}
+
+.blur#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.content p{
+    margin: 10px 0;
+}
+
+
 .text-box{
     padding: 10px 50px;
     background: #ffffff;
@@ -267,7 +303,7 @@ footer {
 
 .footer-text p {
     font-size: 1.3rem;
-    color: var(--color-black);
+    color: var(--color-4);
 }
 
 .footer-iconTop a {
@@ -322,3 +358,73 @@ footer {
     }
 }
 
+/*popout*/
+
+.popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-height: 90%; /* Set a maximum height */
+    padding: 20px; /* Adjust padding to fit the content */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup p {
+    margin: 20px;
+}
+
+.popup a {
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background: black;
+}
+
+.col {
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+
+/* BIG IMAGE */
+.img {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    border: 0.5rem solid var(--light-blue);
+}
+
+
+.street-view {
+    width: 100%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: block;
+    border: 0.5rem solid black;
+}
