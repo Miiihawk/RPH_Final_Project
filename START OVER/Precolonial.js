@@ -108,29 +108,4 @@ function toggle4(){
 }
 
 
-//street view
 
-function initStreetView() {
-    var locations = {
-        'magellan-street-view': "https://www.google.com/maps/embed?pb=!4v1733046761859!6m8!1m7!1sCAoSLEFGMVFpcE4wdWJNUnlGd21DVDhwWk4tTmxUTjRKS0o5MVhfOVdKb29kdmlI!2m2!1d10.29361917590339!2d123.9019774690554!3f230.53715619367426!4f36.05996411685145!5f0.5970117501821992",
-        'missionary-street-view': "https://www.google.com/maps/embed?pb=!4v1733052920156!6m8!1m7!1sCAoSLEFGMVFpcE4xUjJ3Wjc3THZ1VmVDUkgzNWNrcGhxdzV3blNyNVdGcllHOGlz!2m2!1d10.29425119209786!2d123.9023927678782!3f284.55!4f16.379999999999995!5f0.7820865974627469",
-        'katipunan-street-view': "https://www.google.com/maps/embed?pb=!4v1733053060150!6m8!1m7!1sCAoSLEFGMVFpcE4xMkM2ZUtfMHhaSHBUOU41R29BMlNsU2c3RkNJT0Nfb05ydUh1!2m2!1d14.59090864983832!2d120.9809407586723!3f72.68311482157955!4f13.078363283057712!5f1.8307434606067732",
-        'independence-street-view': "https://www.google.com/maps/embed?pb=!4v1733053150076!6m8!1m7!1sCAoSLEFGMVFpcE9kc2g4NG5vTGJwME5xNlNobkYybnFFNG02QzQwRW5QMWJLdVNj!2m2!1d14.44563922035453!2d120.9067944978898!3f153.64958119839903!4f10.62615223835698!5f0.7820865974627469"
-    };
-
-    for (var id in locations) {
-        var element = document.getElementById(id);
-        if (element) {
-            element.innerHTML = `<iframe 
-                src="${locations[id]}" 
-                width="100%" 
-                height="434" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>`;
-        }
-    }
-}
-
-window.onload = initStreetView;
