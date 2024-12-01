@@ -133,27 +133,17 @@ section {
 .heading img {
     width: 100%;
     border-radius: 8px;
-    opacity: 70%;
     border: 3px solid var(--color-4);
 }
 
 .heading h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-black);
+    color: var(--color-4);
     font-size: 3rem;
-    z-index: 1;
 }
 
 .heading p {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
     color: var(--color-black);
-    z-index: 1;
+    margin-bottom: 5rem;
 }
 
 .references-container {
