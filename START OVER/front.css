@@ -21,16 +21,27 @@
     --color-blue-matte: #55679C;
     --color-blue-dark: #1E2A5E;
     --color-brown: #E1D7B7;
+
+    --color-light-yellow: #FAEED1;
+    --color-beige: #DED0B6;
+    --color-light-brown: #B2A59B;
+    --color-green: #9caf88;
+    --color-dark-brown: #bfa081;
+
+    --color-1: #E9EED9;
+    --color-2: #CBD2A4;
+    --color-3: #9A7E6F;
+    --color-4: #54473F;
 }
 
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scrollbar-color: var(--color-blue);
+    scrollbar-color: var(--color-beige);
 }
 
 body {
-    background: var(--color-blue-dark);
+    background: var(--color-1);
 }
 
 ::-webkit-scrollbar {
@@ -38,15 +49,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-blue-dark);
+    background: var(--color-1);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-blue-matte);
+    background: var(--color-2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-blue);
+    background: var(--color-4);
 }
 
 /*NAVIGATION BAR*/
@@ -57,7 +68,7 @@ body {
     width: 100%;
     padding: 0.5rem 9%;
     display: flex;
-    background-color: var(--color-blue-matte);
+    background-color: var(--color-green);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -67,6 +78,7 @@ body {
     list-style: none;
     position: relative;
     color: var(--color-black);
+    font-weight: 650;
     text-decoration: none;
     font-size: 24px;
     font-family: "Cinzel", serif;
@@ -85,7 +97,7 @@ body {
 }
 
 .navbar ul li a {
-    color: var(--color-brown);
+    color: var(--color-black);
     z-index: 1001;
     font-family: "Cinzel", serif;
 }
@@ -94,7 +106,7 @@ body {
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--color-brown);
+    background: var(--color-4);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -129,7 +141,7 @@ nav .fa-solid {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--color-brown);
+    color:var(--color-1);
     text-align: center;
 }
 
@@ -176,8 +188,8 @@ nav .fa-solid {
 
 .btn {
     cursor: pointer;
-    border: 3px solid var(--color-brown);
-    background-color: var(--color-blue-matte);
+    border: 3px solid var(--color-2);
+    background-color: var(--color-4);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     height: 60px; /* Increase button size */
@@ -187,14 +199,14 @@ nav .fa-solid {
     align-items: center;
     font-size: 1.3rem; /* Larger text size */
     font-family: "Times New Roman", serif;
-    color: var(--color-brown);
+    color: var(--color-2);
     text-decoration: none;
     transition: 0.5s;
 }
 
 .btn:hover {
-    background-color: var(--color-brown); /* Add hover effect */
-    color: var(--color-blue-matte);
+    background-color: var(--color-2); /* Add hover effect */
+    color: var(--color-4);
 }
 
 .btn-padding {
@@ -202,112 +214,108 @@ nav .fa-solid {
 }
 
 /*PERIOD SECTION*/
-.container {
+.period-container {
     max-height: 100vh;
     max-width: 124rem;
     padding: 0 1rem;
     margin: 0 auto;
+    text-align: center;
 }
-
-.text-center {
+.period-heading {
+    font-size: 3rem;
+    color: var(--color-4);
+    padding: 1rem 0;
+    font-family: "Cinzel", serif;
     text-align: center;
 }
 
-.section-heading {
-    font-size: 3rem;
-    color: var(--color-brown);
-    padding: 1rem 0;
-    font-family: "Cinzel", serif;
+.period-subheading {
+    color: var(--color-3);
+    background: none;
+    text-align: center;
 }
 
-.section-subheading {
-    color: var(--color-sienna);
-}
-
-#tranding {
+#period {
     padding: 2rem 0;
 }
 
 @media (max-width:1440px) {
-    #tranding {
+    #period {
         padding: 7rem 0;
     }
 }
 
-#tranding .tranding-slider {
+.period-slider {
     height: 52rem;
     padding: 1rem 0;
     position: relative;
 }
 
 @media (max-width:500px) {
-    #tranding .tranding-slider {
+    .period-slider {
         height: 45rem;
     }
 }
 
-.tranding-slide {
+.period-slide {
     width: 37rem;
     height: 42rem;
     position: relative;
 }
 
 @media (max-width:500px) {
-    .tranding-slide {
+    .period-slide {
         width: 28rem !important;
         height: 36rem !important;
     }
-    .tranding-slide .tranding-slide-img img {
+    .period-slide-img img {
         width: 28rem !important;
         height: 36rem !important;
     }
 }
 
-.tranding-slide .tranding-slide-img img {
+.period-slide-img img {
     width: 37rem;
     height: 42rem;
     border-radius: 2rem;
     object-fit: cover;
-    opacity: 70%;
-    background: var(--color-blue-dark);
 }
 
-.tranding-slide .tranding-slide-content {
+.period-slide-content {
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 2rem 2rem;
 }
 
-.tranding-slide-content a {
+.period-slide-content h1 {
+    margin-bottom: 1.5rem;
+}
+
+.period-slide-content h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.period-slide-content h3 {
+    margin: 0.5rem 0;
+    color: var(--color-2);
+}
+
+.period-slide-content a {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.tranding-slide-content .food-price {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: var(--white);
-}
-
-.tranding-slide-content .tranding-slide-content-bottom {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-}
-
-.tranding-slide-content .tranding-slide-content-bottom h2, h3{
-    color: var(--color-white);
+.period-slide-content .period-slide-content-bottom h2,
+.period-slide-content .period-slide-content-bottom h3 {
     font-family: "Cinzel", serif;
-    font-size: 2rem;
-}
-
-.food-rating {
-    padding-top: 1rem;
-    display: flex;
-    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-2);
 }
 
 .swiper-slide-shadow-left,
@@ -315,7 +323,7 @@ nav .fa-solid {
     display: none;
 }
 
-.tranding-slider-control {
+.period-slider-control {
     position: relative;
     bottom: 2rem;
     display: flex;
@@ -323,70 +331,75 @@ nav .fa-solid {
     justify-content: center;
 }
 
-.tranding-slider-control .swiper-button-next {
+.period-slider-control .swiper-button-next {
     left: 58% !important;
     transform: translateX(-58%) !important;
 }
 
 @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-next {
+    .period-slider-control .swiper-button-next {
         left: 70% !important;
         transform: translateX(-70%) !important;
     }
 }
 
 @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-next {
+    .period-slider-control .swiper-button-next {
         left: 80% !important;
         transform: translateX(-80%) !important;
     }
 }
 
 @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-prev {
+    .period-slider-control .swiper-button-prev {
         left: 30% !important;
         transform: translateX(-30%) !important;
     }
 }
 
 @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-prev {
+    .period-slider-control .swiper-button-prev {
         left: 20% !important;
         transform: translateX(-20%) !important;
     }
 }
 
-.tranding-slider-control .slider-arrow {
-    background: var(--color-blue-matte);
+.period-slider-control .slider-arrow {
+    background: var(--color-green);
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
     left: 42%;
     transform: translateX(-42%);
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    filter: drop-shadow(0px 8px 24px rgba(203, 210, 164, 0.1));
 }
 
-.tranding-slider-control .slider-arrow ion-icon {
+.period-slider-control .slider-arrow ion-icon {
     font-size: 2rem;
-    color: var(--color-brown);
+    color: var(--color-1);
+    transition: 0.4s ease-in-out;
 }
 
-.tranding-slider-control .slider-arrow::after {
+.period-slider-control .slider-arrow ion-icon:hover {
+    color: var(--color-4);
+}
+
+.period-slider-control .slider-arrow::after {
     content: '';
 }
 
-.tranding-slider-control .swiper-pagination {
+.period-slider-control .swiper-pagination {
     position: relative;
     width: 15rem;
     bottom: 1rem;
 }
 
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+.period-slider-control .swiper-pagination .swiper-pagination-bullet {
     filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 
-.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--color-blue);
+.period-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--color-green);
 }
 
 /*CONTACT*/
@@ -399,7 +412,7 @@ nav .fa-solid {
 }
 
 .contact-box {
-    background: var(--color-blue-matte);
+    background: var(--color-2);
     border-radius: 8px;
     padding: 2rem;
     width: 100%;
@@ -416,14 +429,34 @@ nav .fa-solid {
 }
 
 .contact-col {
-    flex: 1; /* Equal column width */
+    flex: 1;
     text-align: left;
+}
+
+.contact-col h2, h3 {
+    font-size: 2rem;
+    font-family: "Cinzel", serif;
+    color: var(--color-4);
+}
+
+.contact-col p{
+    font-size: 1.2rem;
+}
+
+.contact-col ul li {
+    list-style: none;
+}
+
+.contact-col ul li p a{
+    text-decoration: none;
+    color: var(--color-black);
 }
 
 .contact img {
     width: 100%;
     border-radius: 8px;
     opacity: 80%;
+    border: 3px solid var(--color-4);
 }
 
 /*FOOTER STYLE*/
@@ -434,12 +467,12 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 9%;
-    background: var(--color-blue-matte);
+    background: var(--color-2);
 }
 
 .footer-text p {
     font-size: 1.3rem;
-    color: var(--color-brown);
+    color: var(--color-black);
 }
 
 .footer-iconTop a {
@@ -448,8 +481,8 @@ footer {
     justify-content: center;
     align-items: center;
     padding: .6rem;
-    background: var(--color-gray-200);
-    border: .2rem solid var(--color-gray-200);
+    background: var(--color-3);
+    border: .2rem solid var(--color-3);
     border-radius: .4rem;
     z-index: 1;
     overflow: hidden;
@@ -463,7 +496,7 @@ footer {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-4);
     z-index: -1;
     transition: .5s;
 }
@@ -474,12 +507,12 @@ footer {
 
 .footer-iconTop a i {
     font-size: 20px;
-    color: var(--color-brown);
+    color: var(--color-1);
     transition: .5s;
 }
 
 .footer-iconTop a:hover i {
-    color: var(--color-brown);
+    color: var(--color-1);
 }
 
 @media(max-width: 900px) {

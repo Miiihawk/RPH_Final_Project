@@ -1,4 +1,4 @@
-var TrandingSlider = new Swiper('.tranding-slider', {
+var TrandingSlider = new Swiper('.period-slider', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -11,7 +11,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         modifier: 2.5,
     },
     autoplay: {
-        delay: 5000,
+        delay: 4500,
         disableOnInteraction: false,
     },
     pagination: {
