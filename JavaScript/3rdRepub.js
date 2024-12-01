@@ -56,7 +56,8 @@ window.addEventListener('scroll',scrollHandler)
 //blur effect
 
 
-function toggle(){
+function toggle(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -67,7 +68,8 @@ function toggle(){
 }
 
 
-function toggle1(){
+function toggle1(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -77,7 +79,8 @@ function toggle1(){
 
 }
 
-function toggle2(){
+function toggle2(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -87,7 +90,8 @@ function toggle2(){
 
 }
 
-function toggle3(){
+function toggle3(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -97,7 +101,8 @@ function toggle3(){
 
 }
 
-function toggle4(){
+function toggle4(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -107,7 +112,8 @@ function toggle4(){
 
 }
 
-function toggle5(){
+function toggle5(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -117,7 +123,8 @@ function toggle5(){
 
 }
 
-function toggle6(){
+function toggle6(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -127,7 +134,8 @@ function toggle6(){
 
 }
 
-function toggle7(){
+function toggle7(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -137,65 +145,7 @@ function toggle7(){
 
 }
 
-function toggle8(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
 
-    var popup1 = document.getElementById('popup9');
-    popup1.classList.toggle('active');
-
-
-}
-
-function toggle9(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup1 = document.getElementById('popup10');
-    popup1.classList.toggle('active');
-
-
-}
-
-function toggle10(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup1 = document.getElementById('popup11');
-    popup1.classList.toggle('active');
-
-
-}
-
-function toggle11(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup1 = document.getElementById('popup12');
-    popup1.classList.toggle('active');
-
-
-}
-
-function toggle12(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup1 = document.getElementById('popup13');
-    popup1.classList.toggle('active');
-
-
-}
-
-function toggle13(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup1 = document.getElementById('popup14');
-    popup1.classList.toggle('active');
-
-
-}
 
 
 //street view

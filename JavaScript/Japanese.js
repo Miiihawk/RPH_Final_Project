@@ -56,7 +56,8 @@ window.addEventListener('scroll',scrollHandler)
 //blur effect
 
 
-function toggle(){
+function toggle(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -67,7 +68,8 @@ function toggle(){
 }
 
 
-function toggle1(){
+function toggle1(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -77,7 +79,8 @@ function toggle1(){
 
 }
 
-function toggle2(){
+function toggle2(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -87,7 +90,8 @@ function toggle2(){
 
 }
 
-function toggle3(){
+function toggle3(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
@@ -97,7 +101,8 @@ function toggle3(){
 
 }
 
-function toggle4(){
+function toggle4(event){
+    event.preventDefault();
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 

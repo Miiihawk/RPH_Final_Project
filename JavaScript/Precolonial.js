@@ -1,5 +1,5 @@
-function qs(selector, all = false){
-    return all ? document.querySelectorAll(selector):document.querySelector(selector)
+function qs(selector, all = false) {
+    return all ? document.querySelectorAll(selector) : document.querySelector(selector)
 }
 
 const sections = qs('.section', true);
@@ -9,12 +9,12 @@ line.style.bottom = `calc(100% - 20px)`;
 
 let prevScrollY = window.scrollY;
 let up, down;
-let full= false;
+let full = false;
 let set = 0;
-const targetY = window.innerHeight*0.8;
+const targetY = window.innerHeight * 0.8;
 
-function scrollHandler(e){
-    const{
+function scrollHandler(e) {
+    const {
         scrollY
     } = window;
     up = scrollY < prevScrollY;
@@ -25,12 +25,12 @@ function scrollHandler(e){
     const dist = targetY - timelineRect.top
     console.log(dist);
 
-    if (down && !full){
+    if (down && !full) {
         set = Math.max(set, dist);
         line.style.bottom = `calc(100% - ${set}px)`
     }
 
-    if (dist > timeline.offsetHeight + 50 && !full){
+    if (dist > timeline.offsetHeight + 50 && !full) {
         full = true;
         line.style.bottom = `-50px`
     }
@@ -39,7 +39,7 @@ function scrollHandler(e){
         //console.log(items);
         const rect = item.getBoundingClientRect();
 
-        if(rect.top + item.offsetHeight / 5 < targetY) {
+        if (rect.top + item.offsetHeight / 5 < targetY) {
             item.classList.add('show-me')
         }
     });
@@ -49,63 +49,55 @@ function scrollHandler(e){
 
 scrollHandler();
 line.style.display = 'block';
-window.addEventListener('scroll',scrollHandler)
-
+window.addEventListener('scroll', scrollHandler)
 
 
 //blur effect
 
 
-function toggle(){
+function toggle(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
     var popup1 = document.getElementById('popup1');
     popup1.classList.toggle('active');
-
-
 }
 
-
-function toggle1(){
+function toggle1(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
     var popup1 = document.getElementById('popup2');
     popup1.classList.toggle('active');
-
-
 }
 
-function toggle2(){
+function toggle2(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
     var popup1 = document.getElementById('popup3');
     popup1.classList.toggle('active');
-
-
 }
 
-function toggle3(){
+function toggle3(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
     var popup1 = document.getElementById('popup4');
     popup1.classList.toggle('active');
-
-
 }
 
-function toggle4(){
+function toggle4(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
     var blur = document.getElementById('blur');
     blur.classList.toggle('active');
 
     var popup1 = document.getElementById('popup5');
     popup1.classList.toggle('active');
-
-
 }
-
 
 

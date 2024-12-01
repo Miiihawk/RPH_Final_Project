@@ -415,7 +415,7 @@ footer {
     margin-right: auto;
     justify-content: center;
     display: block;
-    border: 0.5rem solid var(--light-blue);
+    border: 0.5rem solid var(--color-4);
 }
 
 
@@ -426,5 +426,5 @@ footer {
     margin-right: auto;
     justify-content: center;
     display: block;
-    border: 0.5rem solid black;
+    border: 0.5rem solid var(--color-4);
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hatdog</title>
+  <title>Hibla ng Kasaysayan</title>
   <link href="CSS%20Files/Martial.css" rel="stylesheet">
 
 </head>
@@ -58,7 +58,7 @@
               communist insurgents and Muslim separatists.
             </p>
 
-            <a href="#" onclick="toggle()"> Read More</a>
+            <a href="#" onclick="toggle(event)"> Read More</a>
 
 
           </div>
@@ -82,7 +82,7 @@
               A new Constitution was ratified through a highly controversial referendum.
             </p>
 
-            <a href="#" onclick="toggle1()"> Read More</a>
+            <a href="#" onclick="toggle1(event)"> Read More</a>
 
 
           </div>
@@ -107,7 +107,7 @@
               leading to monopolies and widespread corruption.
             </p>
 
-            <a href="#" onclick="toggle2()"> Read More</a>
+            <a href="#" onclick="toggle2(event)"> Read More</a>
 
 
           </div>
@@ -132,7 +132,7 @@
               retained authoritarian powers through decrees.
             </p>
 
-            <a href="#" onclick="toggle3()"> Read More</a>
+            <a href="#" onclick="toggle3(event)"> Read More</a>
 
 
           </div>
@@ -156,7 +156,7 @@
               On August 21, 1983, opposition leader Benigno Aquino Jr.
               was assassinated upon his return from exile.</p>
 
-            <a href="#" onclick="toggle4()"> Read More</a>
+            <a href="#" onclick="toggle4(event)"> Read More</a>
 
 
           </div>
@@ -180,7 +180,75 @@
               A snap presidential election in February 1986, marred by
               allegations of fraud, led to widespread protests.  </p>
 
-            <a href="#" onclick="toggle5()"> Read More</a>
+            <a href="#" onclick="toggle5(event)"> Read More</a>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!--1987 - Ratification of a New Constitution(Post-Marcos Period)-->
+
+      <div class="section">
+        <div class="bead"></div>
+
+
+        <div class="content">
+          <div class="text-box">
+
+            <h2>1987 - Ratification of a New Constitution(Post-Marcos Period)</h2>
+            <p>
+              The 1987 Constitution restored democratic institutions, emphasizing human rights and limiting presidential powers.
+              It established term limits and an independent judiciary, addressing abuses under the Marcos regime.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!--1992 - Election of Fidel Ramos(Post-Marcos Period)-->
+
+      <div class="section">
+        <div class="bead"></div>
+
+
+        <div class="content">
+          <div class="text-box">
+
+            <h2>1992 - Election of Fidel Ramos(Post-Marcos Period)</h2>
+
+            <p>
+              Fidel V. Ramos succeeded Aquino, focusing on economic reforms, peace talks with insurgents, and national reconciliation.
+              His administration achieved significant milestones, including the 1996 peace agreement with the Moro National Liberation Front (MNLF).
+            </p>
+
+           </div>
+
+        </div>
+
+
+      </div>
+
+      <!--1998 - Presidency of Joseph Estrada(Post-Marcos Period)-->
+
+      <div class="section">
+        <div class="bead"></div>
+
+
+        <div class="content">
+          <div class="text-box">
+
+            <h2>1998 - Presidency of Joseph Estrada(Post-Marcos Period)</h2>
+
+            <p>
+              Joseph Estrada's populist administration was marred by corruption scandals, leading to his ouster in the EDSA II Revolution in 2001.
+            </p>
 
 
           </div>
@@ -215,7 +283,7 @@
 
   <div class="col">
     <div class="Arrival of Magellan Map">
-      <div class="street-view" id="magellan-street-view"></div>
+      <div class="street-view" id="martiallaw-street-view"></div>
     </div>
   </div>
 
@@ -231,7 +299,7 @@
     militarization and the emergence of "crony capitalism," benefiting Marcos' allies.
   </p>
 
-  <a href="#" onclick="toggle()"> Close </a>
+  <a href="#" onclick="toggle(event)"> Close </a>
 
 </div>
 
@@ -239,12 +307,6 @@
 
 <div class="popup" id="popup2">
 
-  <div class="col">
-    <div class="Establishment of the First Spanish Settlement Pic">
-      <img class="img"
-           src="resources/When-Did-The-Spanish-Colonized-The-Philippines.jpg">
-    </div>
-  </div>
 
   <h3>1973 - Ratification of the Constitution</h3>
 
@@ -255,7 +317,7 @@
     plebiscite was conducted under duress and widespread manipulation.
   </p>
 
-  <a href="#" onclick="toggle1()"> Close </a>
+  <a href="#" onclick="toggle1(event)"> Close </a>
 
 </div>
 
@@ -263,12 +325,6 @@
 
 <div class="popup" id="popup3">
 
-  <div class="col">
-    <div class="Establishment of the First Spanish Settlement Pic">
-      <img class="img"
-           src="resources/manila.jpg">
-    </div>
-  </div>
 
   <h3>Mid-1970s - Crony Capitalism and Economic Decline</h3>
 
@@ -280,7 +336,7 @@
     compounded by the global oil crisis, led to rising poverty.
   </p>
 
-  <a href="#" onclick="toggle2()"> Close </a>
+  <a href="#" onclick="toggle2(event)"> Close </a>
 
 </div>
 
@@ -290,7 +346,7 @@
 
   <div class="col">
     <div class="Arrival of Magellan Map">
-      <div class="street-view" id="missionary-street-view"></div>
+      <div class="street-view" id="martiallaw-street-view2"></div>
     </div>
   </div>
 
@@ -303,7 +359,7 @@
     election that year, which Marcos won amid accusations of manipulation.
   </p>
 
-  <a href="#" onclick="toggle3()"> Close </a>
+  <a href="#" onclick="toggle3(event)"> Close </a>
 
 </div>
 
@@ -312,9 +368,8 @@
 <div class="popup" id="popup5">
 
   <div class="col">
-    <div class="Establishment of the First Spanish Settlement Pic">
-      <img class="img"
-           src="resources/encomienda.jpg">
+    <div class="Arrival of Magellan Map">
+      <div class="street-view" id="naia-street-view"></div>
     </div>
   </div>
 
@@ -327,7 +382,7 @@
     groundwork for the <b>People Power Revolution</b>.
   </p>
 
-  <a href="#" onclick="toggle4()"> Close </a>
+  <a href="#" onclick="toggle4(event)"> Close </a>
 
 </div>
 
@@ -336,9 +391,8 @@
 <div class="popup" id="popup6">
 
   <div class="col">
-    <div class="Establishment of the First Spanish Settlement Pic">
-      <img class="img"
-           src="resources/When-Did-The-Spanish-Colonized-The-Philippines.jpg">
+    <div class="Arrival of Magellan Map">
+      <div class="street-view" id="edsa-street-view"></div>
     </div>
   </div>
 
@@ -350,7 +404,7 @@
     Marcos to flee to Hawaii. <b>Corazon Aquino</b>, widow of Benigno Aquino Jr.,
     assumed the presidency, symbolizing the restoration of democracy.</p>
 
-  <a href="#" onclick="toggle5()"> Close </a>
+  <a href="#" onclick="toggle5(event)"> Close </a>
 
 </div>
 
