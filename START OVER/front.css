@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,25 +12,11 @@
 
 :root {
     --color-black: #000;
-    --color-gray-100: #1c181e;
-    --color-gray-200: rgba(28, 24, 30, 0.4);
     --color-white: #fff;
-    --color-sienna: #a3784e;
-    --color-sienna-100: rgba(163, 120, 78, 0.4);
-    --color-gainsboro: #d9d9d9;
-    --color-blue: #7C93C3;
-    --color-blue-matte: #55679C;
-    --color-blue-dark: #1E2A5E;
-    --color-brown: #E1D7B7;
-
-    --color-light-yellow: #FAEED1;
-    --color-beige: #DED0B6;
-    --color-light-brown: #B2A59B;
-    --color-green: #9caf88;
-    --color-dark-brown: #bfa081;
-
     --color-1: #E9EED9;
+    --color-beige: #DED0B6;
     --color-2: #CBD2A4;
+    --color-green: #9caf88;
     --color-3: #9A7E6F;
     --color-4: #54473F;
 }
@@ -77,8 +64,8 @@ body {
 .header a {
     list-style: none;
     position: relative;
-    color: var(--color-black);
-    font-weight: 650;
+    color: var(--color-4);
+    font-weight: 500;
     text-decoration: none;
     font-size: 24px;
     font-family: "Cinzel", serif;
@@ -97,7 +84,7 @@ body {
 }
 
 .navbar ul li a {
-    color: var(--color-black);
+    color: var(--color-4);
     z-index: 1001;
     font-family: "Cinzel", serif;
 }
@@ -472,7 +459,7 @@ footer {
 
 .footer-text p {
     font-size: 1.3rem;
-    color: var(--color-black);
+    color: var(--color-4);
 }
 
 .footer-iconTop a {

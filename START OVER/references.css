@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+}
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-1: #E9EED9;
+    --color-beige: #DED0B6;
+    --color-2: #CBD2A4;
+    --color-green: #9caf88;
+    --color-3: #9A7E6F;
+    --color-4: #54473F;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-beige);
+}
+
+body {
+    background: var(--color-1);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-4);
+}
+
+/*NAVIGATION BAR*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 9%;
+    display: flex;
+    background-color: var(--color-green);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header a {
+    list-style: none;
+    position: relative;
+    color: var(--color-4);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Cinzel", serif;
+}
+
+.navbar {
+    flex: 1;
+    text-align:  right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: var(--color-4);
+    z-index: 1001;
+    font-family: "Cinzel", serif;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--color-4);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/* for smaller version */
+@media(max-width: 900px){
+    .logo img {
+        width: 60px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/*MAIN STYLE*/
+.heading {
+    position: relative;
+    text-align: center;
+}
+
+.heading img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 70%;
+    border: 3px solid var(--color-4);
+}
+
+.heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-black);
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.heading p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-black);
+    z-index: 1;
+}
+
+.references-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid var(--color-4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.aklat-at-artikulo,
+.online,
+.video-at-dokumentaryo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aklat-at-artikulo h2,
+.online h2,
+.video-at-dokumentaryo h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--color-4);
+}
+
+.aklat-at-artikulo ul,
+.online ul,
+.video-at-dokumentaryo ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+    text-align: left;
+}
+
+.aklat-at-artikulo ul li,
+.online ul li,
+.video-at-dokumentaryo ul li {
+    margin-bottom: 10px; /* Add space between items */
+}
+
+/* Link Styling */
+.aklat-at-artikulo ul li a,
+.online ul li a,
+.video-at-dokumentaryo ul li a {
+    text-decoration: none;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+}
+
+.aklat-at-artikulo ul li a:hover,
+.online ul li a:hover,
+.video-at-dokumentaryo ul li a:hover {
+    color: var(--color-3);
+}
+
+
+/*FOOTER STYLE*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 9%;
+    background: var(--color-2);
+}
+
+.footer-text p {
+    font-size: 1.3rem;
+    color: var(--color-4);
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    background: var(--color-3);
+    border: .2rem solid var(--color-3);
+    border-radius: .4rem;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-4);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 20px;
+    color: var(--color-1);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--color-1);
+}
+
+@media(max-width: 900px) {
+    .footer p {
+        font-size: 20px;
+    }
+    .footer-iconTop a i {
+        font-size: 18px;
+    }
+    .footer-iconTop a {
+        padding: .5rem;
+    }
+}
